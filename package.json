@@ -1,0 +1,49 @@
+{
+  "name": "ui-core",
+  "version": "0.1.0",
+  "description": "The Core consists of predefined variables for basic design elements such as color, typography, and spacing. These system properties allow for building layouts and visual styles from defined constraints and serves as base to ZDLS.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zabaala/ui-core.git"
+  },
+  "keywords": [
+    "foundation",
+    "bootstrap",
+    "core",
+    "DLS",
+    "design",
+    "system",
+    "tabler"
+  ],
+  "author": "Mauricio Rodrigues",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zabaala/ui-core/issues"
+  },
+  "homepage": "https://github.com/zabaala/ui-core#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-rename": "^1.2.3",
+    "gulp-autoprefixer": "^5.0.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 1 major version",
+    ">= 1%",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ]
+}
