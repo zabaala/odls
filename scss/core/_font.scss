@@ -1,6 +1,6 @@
 //
 // A list of possible font-sizes.
-// Usage: .fs-8, .fs-10...
+// Usage: .f-8, ..., .f-12
 //
 @each $size in map_keys($font-sizes) {
   .s-#{$size} {

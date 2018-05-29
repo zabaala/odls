@@ -11,7 +11,7 @@ const pckg = require('./package.json');
 
 gulp.task('sass', function(){
   return gulp.src('scss/bundle.scss')
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass({
       precision: 8,
       outputStyle: 'expanded'
@@ -20,7 +20,9 @@ gulp.task('sass', function(){
       browsers: pckg.browserslist,
       cascade: false
     }))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
+    .pipe(rename('ui-core.css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(rename('ui-core.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('dist/css'))
