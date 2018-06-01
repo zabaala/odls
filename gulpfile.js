@@ -9,8 +9,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const pckg = require('./package.json');
 
 
-gulp.task('sass', function(){
-  return gulp.src('scss/bundle.scss')
+gulp.task('sass', () => {
+  return gulp.src('src/scss/bundle.scss')
     // .pipe(sourcemaps.init())
     .pipe(sass({
       precision: 8,
@@ -28,8 +28,16 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('watch', function () {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+gulp.task('js', () => {
+  gulp.src([
+    'src/js/bootstrap/bootstrap.min.js'
+  ])
+  .pipe(rename('ui-core.min.js'))
+  .pipe(gulp.dest('dist/js'))
 });
 
-gulp.task('default', ['sass']);
+gulp.task('watch', () => {
+  gulp.watch('./src/scss/**/*.scss', ['sass']);
+});
+
+gulp.task('default', ['sass', 'js']);
