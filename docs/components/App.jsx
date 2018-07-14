@@ -12,6 +12,7 @@ import Colors from "./Colors";
 import FormComponents from "./FormCompoments";
 import Introduction from "./Introduction";
 import Tags from "./Tags";
+import Typography from "./Typography";
 
 class App extends React.Component {
     render() {
@@ -33,6 +34,7 @@ class App extends React.Component {
                                             <Route path="/colors" component={Colors} />
                                             <Route path="/form-components" component={FormComponents} />
                                             <Route path="/tags" component={Tags} />
+                                            <Route path="/typography" component={Typography} />
 
                                         </div>
                                     </div>
