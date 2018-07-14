@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import Alerts from "./Alerts";
 import Avatars from "./Avatars";
 import Buttons from "./Buttons";
+import Cards from "./Cards";
 import Colors from "./Colors";
 import Introduction from "./Introduction";
 
@@ -26,6 +27,7 @@ class App extends React.Component {
                                             <Route path="/alerts" component={Alerts} />
                                             <Route path="/avatars" component={Avatars} />
                                             <Route path="/buttons" component={Buttons} />
+                                            <Route path="/cards" component={Cards} />
                                             <Route path="/colors" component={Colors} />
                                         </div>
                                     </div>
