@@ -1,8 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Introduction from "./Introduction";
+
 import Sidebar from "./Sidebar";
+
+import Alerts from "./Alerts";
+import Avatars from "./Avatars";
+import Introduction from "./Introduction";
 
 class App extends React.Component {
     render() {
@@ -12,7 +16,15 @@ class App extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-9">
-                                <Route exact path="/introduction" component={Introduction} />
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="text-wrap p-lg-6">
+                                            <Route exact path="/introduction" component={Introduction} />
+                                            <Route exact path="/alerts" component={Alerts} />
+                                            <Route exact path="/avatars" component={Avatars} />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-lg-3">
                                 <Sidebar />
