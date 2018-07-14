@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, IndexRoute } from 'react-router-dom';
+import { HashRouter as Router, Route, IndexRoute } from 'react-router-dom';
 
 import Sidebar from "./Sidebar";
 import Alerts from "./Alerts";
