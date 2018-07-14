@@ -9,6 +9,7 @@ import Avatars from "./Avatars";
 import Buttons from "./Buttons";
 import Cards from "./Cards";
 import Colors from "./Colors";
+import FormComponents from "./FormCompoments";
 import Introduction from "./Introduction";
 
 class App extends React.Component {
@@ -29,6 +30,7 @@ class App extends React.Component {
                                             <Route path="/buttons" component={Buttons} />
                                             <Route path="/cards" component={Cards} />
                                             <Route path="/colors" component={Colors} />
+                                            <Route path="/form-components" component={FormComponents} />
                                         </div>
                                     </div>
                                 </div>

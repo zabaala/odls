@@ -3,7 +3,7 @@ import React from 'react';
 class Cards extends React.Component {
     render() {
         return (
-            <div className="text-wrap p-lg-6">
+            <div>
                 <h2 className="mt-0 mb-4">Cards</h2>
                 <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
                 <p>The <code className="highlighter-rouge">.card</code> element is simply a container with a shadow, a border, a radius, and some padding. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.</p>
