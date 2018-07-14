@@ -3,12 +3,13 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, IndexRoute } from 'react-router-dom';
 
 import Sidebar from "./Sidebar";
-
 import Alerts from "./Alerts";
 import Avatars from "./Avatars";
 import Buttons from "./Buttons";
 import Cards from "./Cards";
+import Charts from "./Charts";
 import Colors from "./Colors";
+import Grid from "./Grid";
 import FormComponents from "./FormCompoments";
 import Introduction from "./Introduction";
 import Tags from "./Tags";
@@ -31,11 +32,12 @@ class App extends React.Component {
                                             <Route path="/avatars" component={Avatars} />
                                             <Route path="/buttons" component={Buttons} />
                                             <Route path="/cards" component={Cards} />
+                                            <Route path="/charts" component={Charts} />
                                             <Route path="/colors" component={Colors} />
+                                            <Route path="/grid" component={Grid} />
                                             <Route path="/form-components" component={FormComponents} />
                                             <Route path="/tags" component={Tags} />
                                             <Route path="/typography" component={Typography} />
-
                                         </div>
                                     </div>
                                 </div>
@@ -50,8 +52,6 @@ class App extends React.Component {
         );
     }
 }
-
-export default App;
 
 render(
     <App />,
