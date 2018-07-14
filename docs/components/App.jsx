@@ -11,6 +11,7 @@ import Cards from "./Cards";
 import Colors from "./Colors";
 import FormComponents from "./FormCompoments";
 import Introduction from "./Introduction";
+import Tags from "./Tags";
 
 class App extends React.Component {
     render() {
@@ -31,6 +32,8 @@ class App extends React.Component {
                                             <Route path="/cards" component={Cards} />
                                             <Route path="/colors" component={Colors} />
                                             <Route path="/form-components" component={FormComponents} />
+                                            <Route path="/tags" component={Tags} />
+
                                         </div>
                                     </div>
                                 </div>
