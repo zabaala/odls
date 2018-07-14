@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, IndexRoute } from 'react-router-dom';
 
 import Sidebar from "./Sidebar";
 
@@ -21,11 +21,12 @@ class App extends React.Component {
                                 <div className="card">
                                     <div className="card-body">
                                         <div className="text-wrap p-lg-12">
-                                            <Route exact path="/introduction" component={Introduction} />
-                                            <Route exact path="/alerts" component={Alerts} />
-                                            <Route exact path="/avatars" component={Avatars} />
-                                            <Route exact path="/buttons" component={Buttons} />
-                                            <Route exact path="/colors" component={Colors} />
+                                            <Route exact path="/" component={Introduction} />
+                                            <Route path="/introduction" component={Introduction} />
+                                            <Route path="/alerts" component={Alerts} />
+                                            <Route path="/avatars" component={Avatars} />
+                                            <Route path="/buttons" component={Buttons} />
+                                            <Route path="/colors" component={Colors} />
                                         </div>
                                     </div>
                                 </div>
