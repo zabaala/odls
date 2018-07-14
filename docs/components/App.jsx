@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import Alerts from "./Alerts";
 import Avatars from "./Avatars";
 import Buttons from "./Buttons";
+import Colors from "./Colors";
 import Introduction from "./Introduction";
 
 class App extends React.Component {
@@ -14,16 +15,17 @@ class App extends React.Component {
         return (
             <Router>
                 <div className="my-3 my-md-5">
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col-lg-9">
                                 <div className="card">
                                     <div className="card-body">
-                                        <div className="text-wrap p-lg-6">
+                                        <div className="text-wrap p-lg-12">
                                             <Route exact path="/introduction" component={Introduction} />
                                             <Route exact path="/alerts" component={Alerts} />
                                             <Route exact path="/avatars" component={Avatars} />
                                             <Route exact path="/buttons" component={Buttons} />
+                                            <Route exact path="/colors" component={Colors} />
                                         </div>
                                     </div>
                                 </div>
