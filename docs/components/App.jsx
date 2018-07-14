@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar";
 
 import Alerts from "./Alerts";
 import Avatars from "./Avatars";
+import Buttons from "./Buttons";
 import Introduction from "./Introduction";
 
 class App extends React.Component {
@@ -22,6 +23,7 @@ class App extends React.Component {
                                             <Route exact path="/introduction" component={Introduction} />
                                             <Route exact path="/alerts" component={Alerts} />
                                             <Route exact path="/avatars" component={Avatars} />
+                                            <Route exact path="/buttons" component={Buttons} />
                                         </div>
                                     </div>
                                 </div>
