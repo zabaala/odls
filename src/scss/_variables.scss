@@ -38,7 +38,8 @@ $display3-size: 3.5rem;
 $display4-size: 3rem;
 
 $font-sizes: (
-	"8": 8rem !important,
+	"8": 0.5rem !important,
+	"9": 0.5625rem !important,
 	"10": 0.625rem !important,
 	"12": 0.75rem !important,
 	"14": 0.875rem !important,
@@ -50,6 +51,7 @@ $font-sizes: (
 	"32": 2rem !important,
 	"36": 2.25rem !important,
 	"48": 3rem !important,
+	"60": 3.75rem !important,
 	"72": 4.5rem !important
 );
 
