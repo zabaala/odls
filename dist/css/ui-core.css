@@ -21244,7 +21244,11 @@ button.bg-lime-darkest:focus {
 }
 
 .s-8 {
-  font-size: 8rem !important;
+  font-size: 0.5rem !important;
+}
+
+.s-9 {
+  font-size: 0.5625rem !important;
 }
 
 .s-10 {
@@ -21289,6 +21293,10 @@ button.bg-lime-darkest:focus {
 
 .s-48 {
   font-size: 3rem !important;
+}
+
+.s-60 {
+  font-size: 3.75rem !important;
 }
 
 .s-72 {
